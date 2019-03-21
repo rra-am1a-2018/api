@@ -1,4 +1,7 @@
 <?php
+  header('Access-Control-Allow-Origin: *');
+  header('Content-type: application/json; charset=utf-8');  
+
   define("SERVERNAME", "localhost");
   define("USERNAME", "root");
   define("PASSWORD", "");
@@ -16,7 +19,6 @@
   // Maak een array van de onleesbare informatie in $result
   $records = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-  //var_dump($records);
-
+  // var_dump($records);
   echo json_encode($records);
 ?>
