@@ -21,4 +21,5 @@
 
   // var_dump($records);
   echo json_encode($records);
+  
 ?>
